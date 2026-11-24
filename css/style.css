@@ -1,0 +1,376 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #080F20,
+        #142541,
+        #0B1224
+    );
+
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 80px 10%;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #72A9FF;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #C1CDE1;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #367DE0;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #5795F0;
+    transform: translateY(-3px);
+}
+
+#about {
+    margin-top: 100px;
+    padding: 25px;
+    max-width: 750px;
+    border: 1px solid rgba(114, 169, 255, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(114, 169, 255, 0.05);
+}
+
+
+#about h2 {
+    font-size: 28px;
+    color: #72A9FF;
+    margin-bottom: 20px;
+}
+
+
+#about p {
+    font-size: 17px;
+    color: #C1CDE1;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #5795F0;
+    box-shadow: 0 0 20px rgba(87, 149, 240, 0.3);
+    transition: 0.3s;
+}
+
+
+.profile-photo:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 30px rgba(87, 149, 240, 0.5);
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.intro {
+    flex: 1;
+}
+
+#projects {
+    margin-top: 60px;
+    padding: 25px;
+    max-width: 750px;
+}
+
+#projects h2 {
+    font-size: 28px;
+    color: #72A9FF;
+    margin-bottom: 25px;
+}
+
+.project {
+    padding: 20px;
+    border: 1px solid #29466B;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.project p {
+    color: #C1CDE1;
+    line-height: 1.8;
+}
+
+#internship {
+    margin-top: 60px;
+    padding: 25px;
+    max-width: 750px;
+}
+
+#internship h2 {
+    font-size: 28px;
+    color: #72A9FF;
+    margin-bottom: 25px;
+}
+
+.experience {
+    padding: 20px;
+    border: 1px solid #29466B;
+    border-radius: 10px;
+}
+
+.experience h3 {
+    color: white;
+    margin-bottom: 12px;
+}
+
+.experience p {
+    color: #C1CDE1;
+    line-height: 1.8;
+}
+
+#certifications {
+    margin-top: 60px;
+    padding: 25px;
+    max-width: 750px;
+}
+
+#certifications h2 {
+    font-size: 28px;
+    color: #72A9FF;
+    margin-bottom: 25px;
+}
+
+.certificate {
+    padding: 18px;
+    border: 1px solid #29466B;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.certificate h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.certificate p {
+    color: #C1CDE1;
+    margin-bottom: 0;
+}
+
+#contact {
+    margin-top: 60px;
+    padding: 25px;
+    max-width: 750px;
+    border: 1px solid rgba(114, 169, 255, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(114, 169, 255, 0.05);
+}
+
+#contact h2 {
+    font-size: 28px;
+    color: #72A9FF;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #72A9FF;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#skills {
+    margin-top: 60px;
+    padding: 25px;
+    max-width: 750px;
+    border: 1px solid rgba(114, 169, 255, 0.25);
+    border-radius: 10px;
+}
+
+#skills h2 {
+    font-size: 28px;
+    color: #72A9FF;
+    margin-bottom: 30px;
+}
+
+.skill-category {
+    margin-bottom: 25px;
+    
+}
+
+.skill-category h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-list span {
+    background-color: #1B3150;
+    color: #C1CDE1;
+    padding: 12px 25px;
+    border: 1px solid #29466B;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+
+.project-btn {
+    display: inline-block;
+    background-color: #367DE0;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background-color: #5795F0;
+    transform: translateY(-3px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#education {
+    margin-top: 60px;
+    padding: 25px;
+    max-width: 750px;
+    border: 1px solid rgba(114, 169, 255, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(114, 169, 255, 0.05);
+}
+
+#education h2 {
+    font-size: 28px;
+    color: #72A9FF;
+    margin-bottom: 25px;
+}
+
+.education-item {
+    margin-bottom: 25px;
+}
+
+.education-item h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    color: #C1CDE1;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid rgba(114, 169, 255, 0.25);
+}
+
+footer p {
+    color: #C1CDE1;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 40px 5%;
+    }
+
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 220px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #about,
+    #education,
+    #projects,
+    #skills,
+    #internship,
+    #certifications,
+    #contact {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .skill-list {
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
