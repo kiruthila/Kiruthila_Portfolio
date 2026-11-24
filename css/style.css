@@ -366,7 +366,11 @@ footer p {
     .skill-list {
         justify-content: center;
     }
-    .navbar {
+   
+}
+/* Minimal Navigation Bar */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -405,25 +409,6 @@ footer p {
     border-bottom: 2px solid #72A9FF;
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 22px;
-        margin-bottom: 40px;
-    }
-
-    .nav-links {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 18px;
-    }
-
-    .nav-links a {
-        font-size: 13px;
-    }
-}
-
-}
 
 
 
